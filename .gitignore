@@ -1,0 +1,11 @@
+/.deploy_git
+/public  
+/_config.yml
+.DS_Store 
+Thumbs.db
+db.json  
+*.log
+.deploy*/
+node_modules/
+.npmignore
+public/
