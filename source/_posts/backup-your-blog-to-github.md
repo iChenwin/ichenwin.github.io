@@ -81,7 +81,8 @@ git push origin hexo	# 或者 git push
 6. 然后就是写博客，并将`.md`文件放至`_posts`文件夹，添加到本地仓库：`git add .`
 7. 提交更改：`git commit -m "写了一篇博客"`
 8. 推至远端仓库`hexo`分支：`git push origin hexo`
- 
+9. 至此，已经完成了博客的撰写并修改了远端仓库的博客源文件，然后使用`hexo g`和`hexo d`更新博客就OK啦！
+
 另外刚在 [stackoverflow](http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add) 上看到一个关于 `git add .` , `git add -u` 以及 `git add -A` 的区别。
 
 > git add -A stages **ALL**
