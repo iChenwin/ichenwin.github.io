@@ -72,16 +72,16 @@ git push origin hexo	# 或者 git push
 ```
 
 ## 同步
-要在其他机子上写博客时，
-1. 新建`blog`文件夹
-2. 在此文件夹下：`git init`
-3. 然后添加远端仓库：`git remote add origin https://github.com/iChenwin/ichenwin.github.io.git`
-4. 切换至`hexo`分支：`git checkout -b hexo`
-5. 获取`hexo`分支源文件：`git pull origin hexo`
-6. 然后就是写博客，并将`.md`文件放至`_posts`文件夹，添加到本地仓库：`git add .`
-7. 提交更改：`git commit -m "写了一篇博客"`
-8. 推至远端仓库`hexo`分支：`git push origin hexo`
-9. 至此，已经完成了博客的撰写并修改了远端仓库的博客源文件，然后使用`hexo g`和`hexo d`更新博客就OK啦！
+要在一台新的机子上写博客时，只需以下几步：
+1.新建`blog`文件夹
+2.在此文件夹下，初始化git仓库：`git init`
+3.为本地仓库添加远端仓库：`git remote add origin https://github.com/iChenwin/ichenwin.github.io.git`
+4.切换至`hexo`分支：`git checkout -b hexo`
+5.获取`hexo`分支源文件：`git pull origin hexo`
+6.然后就是写博客，并将`.md`博客文件放至`_posts`文件夹，然后添加修改到本地仓库：`git add .`
+7.提交更改：`git commit -m "写了一篇博客"`
+8.推至远端仓库`hexo`分支：`git push origin hexo`
+9.至此，已经完成了博客的撰写并修改了远端仓库的博客源文件，然后使用`hexo g`和`hexo d`更新博客就OK啦！
 
 另外刚在 [stackoverflow](http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add) 上看到一个关于 `git add .` , `git add -u` 以及 `git add -A` 的区别。
 
