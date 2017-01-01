@@ -73,10 +73,10 @@ git push origin hexo	# 或者 git push
 
 ## 同步
 要在其他机子上写博客时，
-1. 新建文件夹：`blog`
+1. 新建`blog`文件夹
 2. 在此文件夹下：`git init`
 3. 然后添加远端仓库：`git remote add origin https://github.com/iChenwin/ichenwin.github.io.git`
-4. 切换至`hexo`分支：`git checkout hexo`
+4. 切换至`hexo`分支：`git checkout -b hexo`
 5. 获取`hexo`分支源文件：`git pull origin hexo`
 6. 然后就是写博客，并将`.md`文件放至`_posts`文件夹，添加到本地仓库：`git add .`
 7. 提交更改：`git commit -m "写了一篇博客"`
