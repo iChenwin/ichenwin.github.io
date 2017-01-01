@@ -7,10 +7,10 @@ category: [网络配置]
 ##### 1.1 查看虚拟机的网络参数
 ###### (1). 打开VMware，选择菜单“编辑” 》“虚拟网络编辑器”，如下图：
 ![](http://7i7io5.com1.z0.glb.clouddn.com/nat1.png)
+<!--more-->
 ###### (2). 选中列表中的“VMnet8 NAT”，点击左下角“恢复默认”按钮，恢复默认参数设置。然后点击“NAT设置”按钮，如下图：
 ![](http://7i7io5.com1.z0.glb.clouddn.com/nat2.png)
 ###### (3). 记录虚拟网络的子网IP：`192.168.58.0`、网关IP：`192.168.58.2`
-<!--more-->
 ##### 1.2 设置物理主机的虚拟网络参数
 ###### (1). 打开物理主机的网络连接，找到“VMware Network Adapter VMnet8”，设置属性：
 ![物理机网络参数](http://7i7io5.com1.z0.glb.clouddn.com/nat3.png)
