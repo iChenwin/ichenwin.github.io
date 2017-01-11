@@ -1,7 +1,6 @@
 title: 备份 Hexo 源文件至 GitHub
 date: 2016-12-31 22:34:08
 tags: [git, hexo, backup, github]
-category: [博客建设]
 ---
 
 本文转自：[http://www.leyar.me/backup-your-blog-to-github/](http://www.leyar.me/backup-your-blog-to-github/)
