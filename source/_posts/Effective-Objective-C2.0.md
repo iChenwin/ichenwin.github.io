@@ -68,6 +68,7 @@ EOCConnectionStateDisconnected,
 EOCConnectionStateConnecting,
 EOCConnectionStateConnected,
 } EOCConnectionState;
+```
 　　d.使用：`EOCConnectionState state = EOCConnectionStateDisconnected;`
 　　e.应该用枚举表示状态机的状态、传递给方法的选项、状态码等，给这些值起个易懂的名字。
 　　f.当枚举用来表示传递给方法的选项可以多选时，将枚举各项的值定义为2的幂，以便通过按位或操作将其组合，用按位与判断是否已启用某个选项：`if (resizing & UIViewAutoresizingFlexibleWidth)`
