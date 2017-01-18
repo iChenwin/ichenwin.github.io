@@ -43,5 +43,47 @@ tags: [Objective-C, iOS, 技术笔记]
 　　b.实现文件`.m`用`static const`定义“只在编译单元内可见的常量”。由于此类常量不在全局变量表中，所以无须为其名称添加前缀。
 　　c.头文件`.h`中使用`extern`来声明全局常量，并在与之对应的实现文件中定义常量的值。这种常量出现在全局常量表中，所以通常用与之相关的类名做前缀用于区分。
 5.用枚举表示状态、选项、状态码
-　　
+　　a.枚举的定义：
+```
+enum EOCConnectionState {
+EOCConnectionStateDisconnected,
+EOCConnectionStateConnecting,
+EOCConnectionStateConnected,
+};
+```
+　　b.枚举的使用：`enum EOCConnectionState state = EOCConnectionStateDisconnected;`
+　　c.每次使用定义新的EOCConnectionState枚举变量时时，都要跟上`enum`，为了简化，可以使用`typedef`：
+```
+enum EOCConnectionState {
+EOCConnectionStateDisconnected,
+EOCConnectionStateConnecting,
+EOCConnectionStateConnected,
+};
+typedef enum EOCConnectionState EOCConnectionState;
+```
+或
+```
+typedef enum EOCConnectionState {
+EOCConnectionStateDisconnected,
+EOCConnectionStateConnecting,
+EOCConnectionStateConnected,
+} EOCConnectionState;
+　　d.使用：`EOCConnectionState state = EOCConnectionStateDisconnected;`
+　　e.应该用枚举表示状态机的状态、传递给方法的选项、状态码等，给这些值起个易懂的名字。
+　　f.当枚举用来表示传递给方法的选项可以多选时，将枚举各项的值定义为2的幂，以便通过按位或操作将其组合，用按位与判断是否已启用某个选项：`if (resizing & UIViewAutoresizingFlexibleWidth)`
+　　g.使用宏`NS_ENUM`和`NS_OPTIONS`来定义枚举，并指明数据类型：
+```
+typedef NS_ENUM(NSUInteger, EOCConnectionState) {
+EOCConnectionStateDisconnected,
+EOCConnectionStateConnecting,
+EOCConnectionStateConnected,
+};
+typedef NS_OPTIONS(NSUInteger, EOCPermittedDirection) {
+EOCPermittedDirectionUp = 1 << 0,
+EOCPermittedDirectionDown = 1 << 1,
+EOCPermittedDirectionLeft = 1 << 2,
+EOCPermittedDirectionRight = 1 << 3,
+};
+```
+　　h.在处理使用了枚举类型的switch语句中不要实现default分支。这样的话，以后添加新的枚举项时，编译器会提醒开发者：switch分支未处理所有枚举项
 #### 二、对象，消息，运行时
