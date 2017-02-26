@@ -1,6 +1,7 @@
 title: Effective Objective-C 2.0  编写高质量iOS与OS X代码的52个有效方法
 date: 2017-01-11 08:34:08
-tags: [Objective-C, iOS, 技术笔记]
+tags: [Objective-C, iOS]
+category: 技术笔记
 ---
 #### 一、熟悉Objective-C
 
