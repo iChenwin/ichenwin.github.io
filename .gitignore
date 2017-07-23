@@ -1,5 +1,5 @@
-/.deploy_git
-/public  
+.git*/
+*deploy*/
 _config.yml
 .DS_Store 
 Thumbs.db
