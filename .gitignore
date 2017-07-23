@@ -1,6 +1,5 @@
 .git*/
 *deploy*/
-_config.yml
 .DS_Store 
 Thumbs.db
 db.json  

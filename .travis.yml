@@ -1,27 +1,17 @@
 language: node_js
-
 node_js:
-  - 6.10.3
-
-install:
-  - npm install
-
-script:
-  - hexo clean
-  - hexo g
-
-after_script:
-  - cd ./public
-  - git init
-  - git config user.name "iChenwin"
-  - git config user.email "ichenwin@gmail.com"
-  - git add .
-  - git commit -m "site update"
-  - git push --force --quiet "https://${__GITHUB_TOKEN__}@${GH_REF}" master:master
-
+- 6.10.3
 branches:
   only:
-    - hexo
-env:
- global:
-   - GH_REF: github.com/iChenwin/ichenwin.github.io.git
+  - hexo
+
+install:
+- npm install -g hexo-cli
+- npm install
+
+before_script:
+- git config --global user.name "iChenwin"
+- git config --global user.email "iChenwin@gmail.com"
+- sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
+
+script: npm run build
