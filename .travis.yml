@@ -14,4 +14,4 @@ before_script:
 - git config --global user.email "iChenwin@gmail.com"
 - sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
 
-script: npm run build
+script: hexo clean && hexo generate && hexo deploy
