@@ -54,7 +54,7 @@ weixin:
 # Miscellaneous
 baidu_analytics: 'Vf65dtogyl'
 google_analytics: ''
-favicon: /favicon.png
+favicon: /favicon.ico
 
 #你的头像url
 avatar: /asset/blogImg/ichenwin.jpg
@@ -64,7 +64,15 @@ share_jia: true
 
 #是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
 #若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-duoshuo: "iChenwin"
+#1、多说
+duoshuo: false
+
+#2、网易云跟帖
+wangyiyun: "89e9782c2ed34d8eb6cbe3d9b67b7b56"
+
+#3、畅言
+changyan_appid: false
+changyan_conf: false
 
 # 智能菜单
 # 如不需要，将该对应项置为false
