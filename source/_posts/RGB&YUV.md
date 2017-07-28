@@ -1,8 +1,10 @@
-title: [转]视音频数据处理入门：RGB、YUV像素数据处理
-date: 2016-1-12 19:44:08
-tag: [编解码,视频,YUV]
+title: [转]视音频数据处理入门: RGB、YUV像素数据处理
+date: 2016-01-12 19:44:08
+tag: [编解码,视频]
 category: [媒体控制,技术笔记]
 ---
+
+转自雷神博客：[http://blog.csdn.net/leixiaohua1020](http://blog.csdn.net/leixiaohua1020)
 
 =====================================================
 
@@ -81,7 +83,8 @@ category: [媒体控制,技术笔记]
      * @param num  Number of frames to process.
      *
      */
-    int simplest_yuv420_split(char *url, int w, int h,int num){
+    int simplest_yuv420_split(char *url, int w, int h,int num)
+	{
     	FILE *fp=fopen(url,"rb+");
     	FILE *fp1=fopen("output_420_y.y","wb+");
     	FILE *fp2=fopen("output_420_u.y","wb+");
@@ -168,7 +171,8 @@ output_420_u.y和output_420_v.y
      * @param num  Number of frames to process.
      *
      */
-    int simplest_yuv444_split(char *url, int w, int h,int num){
+    int simplest_yuv444_split(char *url, int w, int h,int num)
+	{
     	FILE *fp=fopen(url,"rb+");
     	FILE *fp1=fopen("output_444_y.y","wb+");
     	FILE *fp2=fopen("output_444_u.y","wb+");
@@ -243,7 +247,8 @@ output_444_v.y
      * @param h       Height of Input YUV file.
      * @param num     Number of frames to process.
      */
-    int simplest_yuv420_gray(char *url, int w, int h,int num){
+    int simplest_yuv420_gray(char *url, int w, int h,int num)
+	{
     	FILE *fp=fopen(url,"rb+");
     	FILE *fp1=fopen("output_gray.yuv","wb+");
     	unsigned char *pic=(unsigned char *)malloc(w*h*3/2);
@@ -296,7 +301,8 @@ output_444_v.y
      * @param h       Height of Input YUV file.
      * @param num     Number of frames to process.
      */
-    int simplest_yuv420_halfy(char *url, int w, int h,int num){
+    int simplest_yuv420_halfy(char *url, int w, int h,int num)
+	{
     	FILE *fp=fopen(url,"rb+");
     	FILE *fp1=fopen("output_half.yuv","wb+");
     
@@ -357,7 +363,8 @@ _256x256_yuv420p.yuv的YUV420P格式的像素数据文件处理成名称为outpu
      * @param border  Width of Border.
      * @param num     Number of frames to process.
      */
-    int simplest_yuv420_border(char *url, int w, int h,int border,int num){
+    int simplest_yuv420_border(char *url, int w, int h,int border,int num)
+	{
     	FILE *fp=fopen(url,"rb+");
     	FILE *fp1=fopen("output_border.yuv","wb+");
     
@@ -421,7 +428,8 @@ order.yuv的YUV420P格式的像素数据文件。输入的原图如下所示。
      * @param barnum   Number of bars
      * @param url_out  Location of Output YUV file.
      */
-    int simplest_yuv420_graybar(int width, int height,int ymin,int ymax,int barnum,char *url_out){
+    int simplest_yuv420_graybar(int width, int height,int ymin,int ymax,int barnum,char *url_out)
+	{
     	int barwidth;
     	float lum_inc;
     	unsigned char lum_temp;
@@ -573,7 +581,8 @@ PSNR是最基本的视频质量评价方法。本程序中的函数可以对比�
      * @param h        Height of Input YUV file.
      * @param num      Number of frames to process.
      */
-    int simplest_yuv420_psnr(char *url1,char *url2,int w,int h,int num){
+    int simplest_yuv420_psnr(char *url1,char *url2,int w,int h,int num)
+	{
     	FILE *fp1=fopen(url1,"rb+");
     	FILE *fp2=fopen(url2,"rb+");
     	unsigned char *pic1=(unsigned char *)malloc(w*h);
@@ -642,7 +651,8 @@ PSNR是最基本的视频质量评价方法。本程序中的函数可以对比�
      * @param num  Number of frames to process.
      *
      */
-    int simplest_rgb24_split(char *url, int w, int h,int num){
+    int simplest_rgb24_split(char *url, int w, int h,int num)
+	{
     	FILE *fp=fopen(url,"rb+");
     	FILE *fp1=fopen("output_r.y","wb+");
     	FILE *fp2=fopen("output_g.y","wb+");
@@ -726,7 +736,8 @@ BMP图像内部实际上存储的就是RGB数据。本程序实现了对RGB像�
      * @param height       Height of input RGB file.
      * @param url_out      Location of Output BMP file.
      */
-    int simplest_rgb24_to_bmp(const char *rgb24path,int width,int height,const char *bmppath){
+    int simplest_rgb24_to_bmp(const char *rgb24path,int width,int height,const char *bmppath)
+	{
     	typedef struct 
     	{  
     		long imageSize;
@@ -873,7 +884,8 @@ BMP采用的是小端（Little Endian）存储方式。这种存储方式中“R
 
     
     
-    unsigned char clip_value(unsigned char x,unsigned char min_val,unsigned char  max_val){
+    unsigned char clip_value(unsigned char x,unsigned char min_val,unsigned char  max_val)
+	{
     	if(x>max_val){
     		return max_val;
     	}else if(x<min_val){
@@ -924,7 +936,8 @@ BMP采用的是小端（Little Endian）存储方式。这种存储方式中“R
      * @param num     Number of frames to process.
      * @param url_out Location of Output YUV file.
      */
-    int simplest_rgb24_to_yuv420(char *url_in, int w, int h,int num,char *url_out){
+    int simplest_rgb24_to_yuv420(char *url_in, int w, int h,int num,char *url_out)
+	{
     	FILE *fp=fopen(url_in,"rb+");
     	FILE *fp1=fopen(url_out,"wb+");
     
@@ -989,7 +1002,8 @@ BMP采用的是小端（Little Endian）存储方式。这种存储方式中“R
      * @param height   Height of Output RGB file.
      * @param url_out  Location of Output RGB file.
      */
-    int simplest_rgb24_colorbar(int width, int height,char *url_out){
+    int simplest_rgb24_colorbar(int width, int height,char *url_out)
+	{
     
     	unsigned char *data=NULL;
     	int barwidth;
