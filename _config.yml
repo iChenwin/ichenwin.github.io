@@ -7,6 +7,9 @@ theme: jekyll-theme-chirpy
 # 如果你希望 UI 是英文，则保持 en。
 lang: zh-CN
 
+# 允许的语言列表
+languages: [zh-CN, en]
+
 # 设定为上海时区
 timezone: Asia/Shanghai
 
@@ -183,6 +186,15 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+  - scope:
+      path: ""
+      type: posts
+    values:
+      lang: zh-CN # 默认所有文章都是中文
+  - scope:
+      path: "en"
+    values:
+      lang: en    # en 文件夹下的内容强制为英文
 
 sass:
   style: compressed
