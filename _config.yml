@@ -3,46 +3,37 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
-lang: en
+# 建议改为 zh-CN。如果以后写了英文文章，Chirpy 的 UI（如“返回顶部”）依然会显示中文。
+# 如果你希望 UI 是英文，则保持 en。
+lang: zh-CN
 
-# Change to your timezone › https://zones.arilyn.cc
-timezone:
+# 设定为上海时区
+timezone: Asia/Shanghai
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: WM # 你的主标题
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: Wayne's Multi-Media Development Blog # 副标题
 
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+description: >- 
+  专注多媒体开发的个人博客，分享技术心得与经验。
 
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+# 你的域名，填入后 SEO 和 RSS 才会生效
+url: "https://ichenwin.github.io" 
 
 github:
-  username: github_username # change to your GitHub username
+  username: iChenwin 
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: falcon_chen 
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Wayne
+  email: ichenwin@gmail.com 
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://twitter.com/falcon_chen 
+    - https://github.com/iChenwin
 
 # Site Verification Settings
 webmaster_verifications:
@@ -98,7 +89,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: /assets/img/ichenwin.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
