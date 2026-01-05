@@ -1,7 +1,9 @@
+---
+layout: post
 title:  添加和移除子视图控制器（child ViewController） 
 date: 2016-11-08 11:30
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 

@@ -1,7 +1,9 @@
+---
+layout: post
 title:  Mac OS X 启用 Web 服务器 
 date: 2016-12-09 15:47
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
   

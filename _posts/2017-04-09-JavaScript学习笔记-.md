@@ -1,7 +1,9 @@
+---
+layout: post
 title:  JavaScript学习笔记 
 date: 2017-04-09 15:51
 tags: JavaScript
-category: 技术笔记
+categories: 技术笔记
 ---
 
   

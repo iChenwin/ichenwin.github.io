@@ -1,7 +1,9 @@
+---
+layout: post
 title:  JavaScript与Objective-C之间的通信 
 date: 2016-08-31 20:14
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 转自 [ 老谭的博客 ](https://www.tanhao.me) ： [ JavaScript与Objective-C之间的通信

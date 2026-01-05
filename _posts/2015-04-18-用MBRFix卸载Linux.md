@@ -1,7 +1,9 @@
+---
+layout: post
 title: 用MBRFix卸载Linux
 date: 2015-04-18 8:17:25
 tags: Linux
-category: 技术笔记
+categories: 技术笔记
 ---
 
 Win7和Linux双系统的情况下，卸载Linux，需修改MBR，方法有二：

@@ -1,7 +1,9 @@
+---
+layout: post
 title:  Objective-C中使用extern引用外部全局变量(如：创建全局可变字符串)
 date: 2017-02-03 22:13
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 使用 ` extern ` 可以创建外部文件可以访问的全局变量。这样我们可以让多个类操控同一变量。通过它可以实现全局可变字符串。 ` extern `

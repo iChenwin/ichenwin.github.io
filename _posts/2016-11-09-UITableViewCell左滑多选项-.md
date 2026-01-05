@@ -1,7 +1,9 @@
+---
+layout: post
 title:  UITableViewCell左滑多选项 
 date: 2016-11-09 22:58
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 

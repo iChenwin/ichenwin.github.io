@@ -1,7 +1,9 @@
+---
+layout: post
 title:  Programming with Objective-C笔记 
 date: 2016-12-24 22:23
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 ####  一、前言

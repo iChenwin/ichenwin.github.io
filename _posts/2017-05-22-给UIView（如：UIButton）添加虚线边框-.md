@@ -1,7 +1,9 @@
+---
+layout: post
 title:  给UIView（如：UIButton）添加虚线边框 
 date: 2017-05-22 14:34
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 要给 ` UIButton ` 等视图加一圈虚线边框，这里是其中一种方法，就是在原来的视图的 ` layer ` 上再添加一层 ` CAShapeLayer

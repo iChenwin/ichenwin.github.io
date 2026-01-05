@@ -1,7 +1,9 @@
+---
+layout: post
 title:  WWDC2014之App Extensions学习笔记 
 date: 2017-02-23 21:01
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 ##  好文，原博文： [ https://foggry.com/blog/2014/06/23/wwdc2014zhi-app-extensionsxue-

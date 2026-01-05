@@ -1,7 +1,9 @@
+---
+layout: post
 title:  设置SearchBar文字字体 
 date: 2016-08-03 16:25
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 ` SearchBar ` 内虽然含有一个 ` UITextField ` ，但是并没有可以直接访问的属性，要想更改 ` TextField `

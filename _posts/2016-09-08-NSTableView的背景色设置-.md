@@ -1,7 +1,9 @@
+---
+layout: post
 title:  NSTableView的背景色设置 
 date: 2016-09-08 13:24
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 在设置 ` NSTableView ` 背景色时，发现它其实包含三层 ` view ` ： ` NSScrollView ` 、 ` NSClipView

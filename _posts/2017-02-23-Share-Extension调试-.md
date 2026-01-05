@@ -1,7 +1,9 @@
+---
+layout: post
 title:  Share Extension调试 
 date: 2017-02-23 20:59
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
   

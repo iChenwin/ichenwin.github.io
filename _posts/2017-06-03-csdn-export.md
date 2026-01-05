@@ -1,7 +1,9 @@
+---
+layout: post
 title: CSDN文章导出，Python批处理更改文件名，添加文件描述
 date: 2017-06-03 10:04:08
-tag: 博客
-category: 博客建设
+tags: 博客
+categories: 博客建设
 ---
 
 想把`CSDN`博客同步到拿`GitHub Page`搭的独立博客上去，找了下，发现有人用`Python`写了个工具，可以将博客导出为`Markdown`和`HTML`格式：[csdn-blog-export](https://github.com/gaocegege/csdn-blog-export)
@@ -18,8 +20,8 @@ category: 博客建设
 ```
 title: Hello World
 date: 2014-05-27 10:04:08
-tag: 博客
-category: 博客建设
+tags: 博客
+categories: 博客建设
 ---
 ```
 顺便把文件名该为博文名。于是自己写了个`Python`脚本：

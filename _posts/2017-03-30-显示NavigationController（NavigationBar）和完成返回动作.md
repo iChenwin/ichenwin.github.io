@@ -1,7 +1,9 @@
+---
+layout: post
 title:  显示NavigationController（NavigationBar）和完成返回动作
 date: 2017-03-30 16:37
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
   

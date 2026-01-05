@@ -1,7 +1,9 @@
+---
+layout: post
 title:  NavigationBar导航栏透明 
 date: 2016-08-12 18:49
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 想要得到导航栏透明的视图控制器(ViewController)，效果如下图：  

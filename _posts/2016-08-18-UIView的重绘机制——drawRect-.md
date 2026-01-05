@@ -1,7 +1,9 @@
+---
+layout: post
 title:  UIView的重绘机制——drawRect 
 date: 2016-08-18 10:08
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 斯坦福公开课 ` 第七课.Views and Gestures ` ，提到了UIView的重绘函数 ` drawRect ` ，其中用到了 `

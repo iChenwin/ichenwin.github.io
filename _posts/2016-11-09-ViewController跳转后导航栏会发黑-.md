@@ -1,7 +1,9 @@
+---
+layout: post
 title:  ViewController跳转后导航栏会发黑 
 date: 2016-11-09 22:33
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 视图控制器之间跳转，在加载新视图控制器时，导航栏底色会闪一下，是黑色一闪而过。  

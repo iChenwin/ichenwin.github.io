@@ -1,7 +1,9 @@
+---
+layout: post
 title:  NSDate和NSString相互转换 
 date: 2016-11-09 23:09
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
   

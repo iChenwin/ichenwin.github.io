@@ -1,7 +1,9 @@
+---
+layout: post
 title:  AFNetworking等待网络请求，继续同步操作 
 date: 2016-11-09 23:04
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
   

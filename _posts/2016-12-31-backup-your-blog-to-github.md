@@ -1,3 +1,5 @@
+---
+layout: post
 title: 备份 Hexo 源文件至 GitHub
 date: 2016-12-31 22:34:08
 tags: [git, hexo, backup, github]

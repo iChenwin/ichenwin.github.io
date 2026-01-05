@@ -1,7 +1,9 @@
+---
+layout: post
 title:  Fedora 20安装fcitx输入法 
 date: 2015-03-18 20:01
 tags: Linux
-category: 技术笔记
+categories: 技术笔记
 ---
 
 转自： [ https://yanue.net/post-140.html ](https://yanue.net/post-140.html)

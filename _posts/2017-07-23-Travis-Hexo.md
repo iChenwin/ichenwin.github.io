@@ -1,7 +1,9 @@
+---
+layout: post
 title: Travis CI 自动部署 Hexo
 date: 2017-07-23 19:57:08
-tag: [hexo, 博客]
-category: 博客建设
+tags: [hexo, 博客]
+categories: 博客建设
 ---
 介绍利用软件开发中的持续集成工具 Travis CI 来帮助完成 Hexo 的自动部署。
 1. 登陆 GitHub，进入设置界面，在 Personal access tokens 页面下点击右上角的 Generate new token 按钮会生成新的 token，随后输入密码，取个名字，勾选一些权限。

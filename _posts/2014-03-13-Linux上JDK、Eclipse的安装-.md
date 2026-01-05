@@ -1,7 +1,9 @@
+---
+layout: post
 title:  Linux上JDK、Eclipse的安装 
 date: 2014-03-13 22:46
 tags: Linux
-category: 技术笔记
+categories: 技术笔记
 ---
 
 一、jdk安装

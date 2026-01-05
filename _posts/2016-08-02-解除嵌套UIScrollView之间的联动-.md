@@ -1,7 +1,9 @@
+---
+layout: post
 title:  解除嵌套UIScrollView之间的联动 
 date: 2016-08-02 20:29
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 一般情况下，在两个嵌套UIScrollView中，innerView滑到顶的时候，会联动outterView开始滚动，为了解除滚动，可以在innerView

@@ -1,7 +1,9 @@
+---
+layout: post
 title:  iOS系统音量控制——MPVolumeView 
 date: 2017-05-15 17:39
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 iOS的音量控制接口在 ` MediaPlayer ` 库中，  

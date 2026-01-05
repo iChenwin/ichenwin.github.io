@@ -1,7 +1,9 @@
+---
+layout: post
 title:  让SVProgressHUD提示框自动消失 
 date: 2016-09-13 00:05
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 [ SVProgressHUD ](https://github.com/SVProgressHUD/SVProgressHUD)

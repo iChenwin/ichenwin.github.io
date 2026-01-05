@@ -1,7 +1,9 @@
+---
+layout: post
 title:  设置NavigationBar导航栏中返回按钮(BackBarButtonItem)和BarButtonItem文字
 date: 2016-10-20 17:13
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 ####  1\. 后退按钮BackBarButtonItem的title设置

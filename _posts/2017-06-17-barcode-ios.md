@@ -1,7 +1,9 @@
+---
+layout: post
 title: iOS扫描二维码
 date: 2017-06-17 10:04:08
-tag: iOS
-category: 技术笔记
+tags: iOS
+categories: 技术笔记
 ---
 
 ![扫码器所用AVFoundation模块图](https://ichenwin.qiniudn.com/avfoundation.png)

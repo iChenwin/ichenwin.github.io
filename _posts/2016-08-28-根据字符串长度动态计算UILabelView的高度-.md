@@ -1,7 +1,9 @@
+---
+layout: post
 title:  根据字符串长度动态计算UILabelView的高度 
 date: 2016-08-28 15:39
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 在调用 ` UILabelView ` 时， ` Label ` 的高度最好根据字符串长度动态设置，为了实现这一点，我们可以用 `

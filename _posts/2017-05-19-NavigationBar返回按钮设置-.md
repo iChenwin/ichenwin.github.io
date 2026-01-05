@@ -1,7 +1,9 @@
+---
+layout: post
 title:  NavigationBar返回按钮设置 
 date: 2017-05-19 16:25
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
   1. ` NavigationBar ` 中返回按钮 ` title ` 的设置，要在父视图中完成，假设A视图（AViewController）包裹在导航视图中（NavigationVC），它通过 ` pushViewController ` 将B视图（BViewController）压入栈中，要想更改B视图的返回按钮，需在A视图中添加设置代码： 

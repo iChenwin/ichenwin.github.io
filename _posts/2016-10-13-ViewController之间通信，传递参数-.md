@@ -1,7 +1,9 @@
+---
+layout: post
 title:  ViewController之间通信，传递参数 
 date: 2016-10-13 11:38
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 从 ` FirstViewController ` 跳转到 ` SecondViewController ` ，当从 `

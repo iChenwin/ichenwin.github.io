@@ -1,7 +1,9 @@
+---
+layout: post
 title:  Objective-C常用宏定义 
 date: 2016-10-14 10:25
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 看到 [ LvesLi’s Blogging ](https://lvesli.com/2016/06/03/About-Me/)

@@ -1,7 +1,9 @@
+---
+layout: post
 title:  自动布局(AutoLayout)的三种方式 
 date: 2016-09-07 23:37
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
   

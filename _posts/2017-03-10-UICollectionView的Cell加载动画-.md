@@ -1,7 +1,9 @@
+---
+layout: post
 title:  UICollectionView的Cell加载动画 
 date: 2017-03-10 16:24
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 

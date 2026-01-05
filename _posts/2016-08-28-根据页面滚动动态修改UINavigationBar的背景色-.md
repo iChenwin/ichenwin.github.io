@@ -1,7 +1,9 @@
+---
+layout: post
 title:  根据页面滚动动态修改UINavigationBar的背景色 
 date: 2016-08-28 16:10
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 最近要实现UINavigationBar背景动态改变的功能，找到了 [ Glow 技术团队博客 ](https://tech.glowing.com/cn/)

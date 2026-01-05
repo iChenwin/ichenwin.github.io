@@ -1,7 +1,9 @@
+---
+layout: post
 title:  通过UIImageView的tag为点击事件UITapGestureRecognizer传参
 date: 2016-07-29 16:23
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 为了点击图片时，知道哪张图片被点击，需要向 ` UITapGestureRecognizer ` 传递一个参数，此处使用了 ` UIImageView `

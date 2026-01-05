@@ -1,7 +1,9 @@
+---
+layout: post
 title:  NSAttributedString——为Label设置富文本 
 date: 2016-07-27 19:29
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 为了在同一个Label中显示两种颜色的字符，如下图（浅灰和黑色）：  

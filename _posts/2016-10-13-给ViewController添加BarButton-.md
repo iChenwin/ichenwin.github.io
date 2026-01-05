@@ -1,7 +1,9 @@
+---
+layout: post
 title:  给ViewController添加BarButton 
 date: 2016-10-13 11:06
 tags: iOS
-category: 技术笔记
+categories: 技术笔记
 ---
 
 用代码给UIViewController(self)添加BarButton时，下面的代码不起作用：
