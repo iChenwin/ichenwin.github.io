@@ -5,7 +5,7 @@ category: 技术笔记
 ---
 
   
-引自廖雪峰老师的教程： [ JavaScript教程 ](http://www.liaoxuefeng.com/wiki/001434446689867b2
+引自廖雪峰老师的教程： [ JavaScript教程 ](https://www.liaoxuefeng.com/wiki/001434446689867b2
 7157e896e74d51a89c25cc8b43bdb3000)
 
 ####  1\. 基本语法

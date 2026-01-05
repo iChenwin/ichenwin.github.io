@@ -6,7 +6,7 @@ category: 技术笔记
 
 iOS的音量控制接口在 ` MediaPlayer ` 库中，  
 1\. 首先要将该库导入：  
-![MediaPlayer](http://img.blog.csdn.net/20170515172210316?watermark/2/text/aHR
+![MediaPlayer](https://img.blog.csdn.net/20170515172210316?watermark/2/text/aHR
 0cDovL2Jsb2cuY3Nkbi5uZXQvaWNoZW53aW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFC
 MA==/dissolve/70/gravity/SouthEast)  
 2\. 然后在用到的地方引入 ` MPVolumeView ` 的头文件：  

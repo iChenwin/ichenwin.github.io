@@ -32,7 +32,7 @@ NSString到NSDate的转换：
     //NSString转NSDate
     NSDate *date=[formatter dateFromString:dateString];
 
-[ 刚刚在线 ](http://www.superqq.com/) 上的介绍： [ http://www.superqq.com/
-](http://www.superqq.com/blog/2015/06/26/nsdatehe-nsstringxiang-hu-zhuan-
+[ 刚刚在线 ](https://www.superqq.com/) 上的介绍： [ https://www.superqq.com/
+](https://www.superqq.com/blog/2015/06/26/nsdatehe-nsstringxiang-hu-zhuan-
 huan/)
 

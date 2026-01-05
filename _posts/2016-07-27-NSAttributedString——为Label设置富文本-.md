@@ -5,7 +5,7 @@ category: 技术笔记
 ---
 
 为了在同一个Label中显示两种颜色的字符，如下图（浅灰和黑色）：  
-![富文本](http://img.blog.csdn.net/20160727192037886)  
+![富文本](https://img.blog.csdn.net/20160727192037886)  
 这里用到了 ` NSMutableAttributedString ` ，它可以创建自定义属性的富文本。和它同类的还有 `
 NSAttributedString ` 。  
 要实现上面一个Label中含两种颜色字符的效果，将汉字颜色设置成浅灰色，用了下面简单的代码实现：

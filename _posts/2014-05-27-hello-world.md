@@ -3,7 +3,7 @@ date: 2014-05-27 10:04:08
 tag: 博客 CSS
 category: 博客建设
 ---
-Welcome to [Hexo](http://hexo.io/)! This is your very first post. Check [documentation](http://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](http://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
 ## Quick Start
 
@@ -13,7 +13,7 @@ Welcome to [Hexo](http://hexo.io/)! This is your very first post. Check [documen
 $ hexo new "My New Post"
 ```
 
-More info: [Writing](http://hexo.io/docs/writing.html)
+More info: [Writing](https://hexo.io/docs/writing.html)
 
 ### Run server
 
@@ -21,7 +21,7 @@ More info: [Writing](http://hexo.io/docs/writing.html)
 $ hexo server
 ```
 
-More info: [Server](http://hexo.io/docs/server.html)
+More info: [Server](https://hexo.io/docs/server.html)
 <!--more-->
 ### Generate static files
 
@@ -29,7 +29,7 @@ More info: [Server](http://hexo.io/docs/server.html)
 $ hexo generate
 ```
 
-More info: [Generating](http://hexo.io/docs/generating.html)
+More info: [Generating](https://hexo.io/docs/generating.html)
 
 ### Deploy to remote sites
 
@@ -37,7 +37,7 @@ More info: [Generating](http://hexo.io/docs/generating.html)
 $ hexo deploy
 ```
 
-More info: [Deployment](http://hexo.io/docs/deployment.html)
+More info: [Deployment](https://hexo.io/docs/deployment.html)
 
 ### 问题收录
 1. 提交的时候遇到`Deployer not found: git`

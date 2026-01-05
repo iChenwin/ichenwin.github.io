@@ -35,14 +35,14 @@ navigation item may be retrieved in order to present its back button.
 The default behavior is to create a navigation item that displays the view
 controller’€™s title.
 
-[ 刘大帅 ](http://www.jianshu.com/users/09e77d340dcf/latest_articles) 在他的博客 [
-【iOS】导航栏那些事儿 ](http://www.jianshu.com/p/f797793d683f#) 详细解释了原因：
+[ 刘大帅 ](https://www.jianshu.com/users/09e77d340dcf/latest_articles) 在他的博客 [
+【iOS】导航栏那些事儿 ](https://www.jianshu.com/p/f797793d683f#) 详细解释了原因：
 
 > 事实上，UINavigationController并没有navigationItem这样一个直接的属性，由于UINavigationControlle
 r继承于UIViewController,而UIViewController是有navigationItem这个属性的，所以才会出现如图所示的情况。  
 文／刘大帅（简书作者）  
-原文链接： [ http://www.jianshu.com/p/f797793d683f#
-](http://www.jianshu.com/p/f797793d683f#)  
+原文链接： [ https://www.jianshu.com/p/f797793d683f#
+](https://www.jianshu.com/p/f797793d683f#)  
 著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。
 
 还举了个很形象的栗子：
@@ -54,7 +54,7 @@ r）就相当于一个个剧团，而导航项（navigation item）就相当于�
 item,title 等等），每个视图控制器的导航项可能都是不同的，可能一个右边有一个选择照片的bar button
 item,而另一个视图控制器的右边有两个bar button item。  
 文／刘大帅（简书作者）  
-原文链接： [ http://www.jianshu.com/p/f797793d683f#
-](http://www.jianshu.com/p/f797793d683f#)  
+原文链接： [ https://www.jianshu.com/p/f797793d683f#
+](https://www.jianshu.com/p/f797793d683f#)  
 著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。
 

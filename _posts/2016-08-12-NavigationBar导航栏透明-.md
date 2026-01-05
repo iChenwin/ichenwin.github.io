@@ -5,11 +5,11 @@ category: 技术笔记
 ---
 
 想要得到导航栏透明的视图控制器(ViewController)，效果如下图：  
-![透明导航栏](http://img.blog.csdn.net/20160812183631732)  
+![透明导航栏](https://img.blog.csdn.net/20160812183631732)  
   
   
 而默认情况下，导航栏是这样的：  
-![不透明](http://img.blog.csdn.net/20160812183714872)  
+![不透明](https://img.blog.csdn.net/20160812183714872)  
   
   
 想要让导航栏透明，可以这样实现：  
@@ -35,7 +35,7 @@ category: 技术笔记
     }
 
 不过设置完透明，导航栏下的 ` tableView ` 并没有置顶，而是留了块白条：  
-![白条](http://img.blog.csdn.net/20160812184734214)  
+![白条](https://img.blog.csdn.net/20160812184734214)  
   
   
 这里还需要设置当前视图控制器的另外一属性 ` automaticallyAdjustsScrollViewInsets `

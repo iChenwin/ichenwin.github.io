@@ -4,8 +4,8 @@ tags: iOS
 category: 技术笔记
 ---
 
-##  好文，原博文： [ http://foggry.com/blog/2014/06/23/wwdc2014zhi-app-extensionsxue-
-xi-bi-ji/ ](http://foggry.com/blog/2014/06/23/wwdc2014zhi-app-extensionsxue-
+##  好文，原博文： [ https://foggry.com/blog/2014/06/23/wwdc2014zhi-app-extensionsxue-
+xi-bi-ji/ ](https://foggry.com/blog/2014/06/23/wwdc2014zhi-app-extensionsxue-
 xi-bi-ji/)
 
 ##  一、关于App Extensions
@@ -123,10 +123,10 @@ Groups实现的，后文将会详述。
 
 三者间的关系可以通过官网给的两张图片形象地说明：
 
-![detailed_communication](http://foggry.com/images/article5/detailed_communica
+![detailed_communication](https://foggry.com/images/article5/detailed_communica
 tion.png)
 
-![app_extensions_container_restrictions](http://foggry.com/images/article5/app
+![app_extensions_container_restrictions](https://foggry.com/images/article5/app
 _extensions_container_restrictions.png)
 
   * containing app能够控制extension的出现和隐藏 
@@ -191,7 +191,7 @@ App Groups位于：
 
 添加成功以后如下图所示：
 
-![app_group](http://foggry.com/images/article5/app_group.png)
+![app_group](https://foggry.com/images/article5/app_group.png)
 
   * 在extension中开启 
 
@@ -509,7 +509,7 @@ extension和普通app的最大区别之一是生命周期。
 
 下图来自官方文档，它将生命周期划分的更详细：
 
-![app_extensions_lifecycle](http://foggry.com/images/article5/app_extensions_l
+![app_extensions_lifecycle](https://foggry.com/images/article5/app_extensions_l
 ifecycle.png)
 
 通过打印日志发现， ` Today ` 中的 ` widget ` 在将 ` Today ` 切换到 ` 全部 ` 或者 ` 未读通知时 ` 都会被杀掉。
@@ -518,7 +518,7 @@ ifecycle.png)
 
 extension和普通app的调试方式差不多，开始调试前先选中extension对应的target，点击run，就会弹出下图所示选择框：
 
-![extension_debug](http://foggry.com/images/article5/extension_debug.png)
+![extension_debug](https://foggry.com/images/article5/extension_debug.png)
 
 需要选择一个host app，这里选择 ` Today ` 。
 
@@ -620,7 +620,7 @@ extension和普通app的调试方式差不多，开始调试前先选中extensio
 
   * [ App Extension Programming Guide ](https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214-CH20-SW1)
 
-  * [ Crash Course In iOS 8 Widgets ](http://blog.waynehartman.com/)
+  * [ Crash Course In iOS 8 Widgets ](https://blog.waynehartman.com/)
 
   * [ Notification Center Framework Reference ](https://developer.apple.com/library/prerelease/ios/documentation/NotificationCenter/Reference/NotificationCenter_Framework/index.html#//apple_ref/doc/uid/TP40014443)
 
@@ -628,9 +628,9 @@ extension和普通app的调试方式差不多，开始调试前先选中extensio
 
   * [ Entitlement Key Reference ](https://developer.apple.com/library/prerelease/ios/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW19)
 
-  * [ 苹果的插件生态系统，开发者的新世界 ](http://www.pingwest.com/apples-new-extension-eco-system/)
+  * [ 苹果的插件生态系统，开发者的新世界 ](https://www.pingwest.com/apples-new-extension-eco-system/)
 
-  * [ iOS 8 Extensions: Apple’s Plan for a Powerful App Ecosystem ](http://www.macstories.net/stories/ios-8-extensions-apples-plan-for-a-powerful-app-ecosystem/)
+  * [ iOS 8 Extensions: Apple’s Plan for a Powerful App Ecosystem ](https://www.macstories.net/stories/ios-8-extensions-apples-plan-for-a-powerful-app-ecosystem/)
 
   * [ Property List Programming Guide ](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html)
 

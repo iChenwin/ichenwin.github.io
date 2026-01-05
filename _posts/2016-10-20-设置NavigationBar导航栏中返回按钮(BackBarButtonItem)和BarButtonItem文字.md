@@ -14,7 +14,7 @@ category: 技术笔记
 2、如果B没有自定义按钮，但是A视图的backBarButtonItem属性有自定义项，则显示这个自定义项；  
 3、如果前2条都没有，则默认显示一个后退按钮，后退按钮的标题是A视图的标题（没有标题，则显示“back”）。
 <!--more-->
-（摘自博客： [ iOS 修改导航栏的返回按钮的内容 ](http://www.gowhich.com/blog/167) ）
+（摘自博客： [ iOS 修改导航栏的返回按钮的内容 ](https://www.gowhich.com/blog/167) ）
 
 所以我的实现方法是，在A视图跳转至B视图之前修改A视图的backBarButtonItem的title：
 
@@ -29,7 +29,7 @@ category: 技术笔记
     }
 
 效果如图：  
-![后退按钮](http://img.blog.csdn.net/20161020170954443)  
+![后退按钮](https://img.blog.csdn.net/20161020170954443)  
   
   
 

@@ -4,8 +4,8 @@ tags: iOS
 category: 技术笔记
 ---
 
-转自 [ 老谭的博客 ](http://www.tanhao.me) ： [ JavaScript与Objective-C之间的通信
-](http://www.tanhao.me/pieces/1607.html/)  
+转自 [ 老谭的博客 ](https://www.tanhao.me) ： [ JavaScript与Objective-C之间的通信
+](https://www.tanhao.me/pieces/1607.html/)  
 1、JS中变量在OC中的类型  
 通过OC-JS Bridge，变量的类型会自动进行转换，基本类型都会自动转换，如JS中的number、boolean都会转换成OC中的NSNumber类型，
 而String类型会自动转换成NSString类型，JS中的对象会转换成WebScriptObject对象，而相关的属性信息可以通过Key-

@@ -4,7 +4,7 @@ tag: iOS
 category: 技术笔记
 ---
 
-![扫码器所用AVFoundation模块图](http://ichenwin.qiniudn.com/avfoundation.png)
+![扫码器所用AVFoundation模块图](https://ichenwin.qiniudn.com/avfoundation.png)
 
 <!-- more -->
 

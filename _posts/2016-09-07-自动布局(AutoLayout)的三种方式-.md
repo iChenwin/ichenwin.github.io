@@ -10,13 +10,13 @@ category: 技术笔记
 2\. 使用对齐约束 ` Alignment Constraints ` 或者距离约束：  
 
   
-![对齐约束](http://img.blog.csdn.net/20160907233105813)  
-![距离约束](http://img.blog.csdn.net/20160907233209017)
+![对齐约束](https://img.blog.csdn.net/20160907233105813)  
+![距离约束](https://img.blog.csdn.net/20160907233209017)
 
 <!--more-->  
 3\. 通过 ` Ctrl Drag ` 在两个视图/控件之间创建约束，按住 ` Shift ` 同时设定多个约束。  
 
   
-![这里写图片描述](http://img.blog.csdn.net/20160907233645449)  
-![这里写图片描述](http://img.blog.csdn.net/20160907233702855)
+![这里写图片描述](https://img.blog.csdn.net/20160907233645449)  
+![这里写图片描述](https://img.blog.csdn.net/20160907233702855)
 

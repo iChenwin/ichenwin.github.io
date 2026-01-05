@@ -4,9 +4,9 @@ tags: Linux
 category: 技术笔记
 ---
 
-转自： [ http://yanue.net/post-140.html ](http://yanue.net/post-140.html)
+转自： [ https://yanue.net/post-140.html ](https://yanue.net/post-140.html)
 
-[ ](http://yanue.net/post-140.html)
+[ ](https://yanue.net/post-140.html)
 
 为方便操作，先以用root账户登录系统
 

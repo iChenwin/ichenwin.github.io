@@ -23,5 +23,5 @@ MbrFix /drive <num> writestate <state>     Write state to byte 0x1b0 in MBR
 ```
 <!--more-->
 附件二：MBRFix下载：
-链接: [http://pan.baidu.com/s/1bn6O78r](http://pan.baidu.com/s/1bn6O78r)
+链接: [https://pan.baidu.com/s/1bn6O78r](https://pan.baidu.com/s/1bn6O78r)
 密码: y3mk

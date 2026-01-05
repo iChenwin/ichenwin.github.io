@@ -3,7 +3,7 @@ date: 2016-12-31 22:34:08
 tags: [git, hexo, backup, github]
 ---
 
-本文转自：[http://www.leyar.me/backup-your-blog-to-github/](http://www.leyar.me/backup-your-blog-to-github/)
+本文转自：[https://www.leyar.me/backup-your-blog-to-github/](https://www.leyar.me/backup-your-blog-to-github/)
 
 ## 前言
 
@@ -82,7 +82,7 @@ git push origin hexo	# 或者 git push
 8.推至远端仓库`hexo`分支：`git push origin hexo`
 9.至此，已经完成了博客的撰写并修改了远端仓库的博客源文件，然后使用`hexo g`和`hexo d`更新博客就OK啦！
 
-另外刚在 [stackoverflow](http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add) 上看到一个关于 `git add .` , `git add -u` 以及 `git add -A` 的区别。
+另外刚在 [stackoverflow](https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add) 上看到一个关于 `git add .` , `git add -u` 以及 `git add -A` 的区别。
 
 > git add -A stages **ALL**
 > git add .	stages new and modified, **without deleted**

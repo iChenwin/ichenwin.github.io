@@ -11,6 +11,6 @@ category: 技术笔记
 ` self.navigationController.navigationBar.translucent = NO; `  
 解决。
 
-栈溢出的讨论： [ stackoverflow ](http://stackoverflow.com/questions/22413193/dark-
+栈溢出的讨论： [ stackoverflow ](https://stackoverflow.com/questions/22413193/dark-
 shadow-on-navigation-bar-during-segue-transition-after-upgrading-to-xcode-5)
 <!--more-->

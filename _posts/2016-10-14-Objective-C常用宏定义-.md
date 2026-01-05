@@ -4,7 +4,7 @@ tags: iOS
 category: 技术笔记
 ---
 
-看到 [ LvesLi’s Blogging ](http://lvesli.com/2016/06/03/About-Me/)
+看到 [ LvesLi’s Blogging ](https://lvesli.com/2016/06/03/About-Me/)
 分享的一些Objective-C常用宏定义，非常好用，记录于此：
 
     
@@ -56,5 +56,5 @@ category: 技术笔记
     #define USER_DEFAULT [NSUserDefaults standardUserDefaults]
 
 博文原地址： [ Objective-C 预处理器(The Preprocessor)
-](http://lvesli.com/2016/05/24/Objective-C-The-Preprocessor/)
+](https://lvesli.com/2016/05/24/Objective-C-The-Preprocessor/)
 

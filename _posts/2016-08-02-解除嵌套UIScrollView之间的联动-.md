@@ -6,8 +6,8 @@ category: 技术笔记
 
 一般情况下，在两个嵌套UIScrollView中，innerView滑到顶的时候，会联动outterView开始滚动，为了解除滚动，可以在innerView
 的 ` .m ` 文件添加以下代码：(代码来自 [ iwevon
-](http://www.jianshu.com/users/b3e1f67c3afd/latest_articles) 在简书的博客 [
-ScrollView包含TableView解除联动 ](http://www.jianshu.com/p/420f9dc78c04) )
+](https://www.jianshu.com/users/b3e1f67c3afd/latest_articles) 在简书的博客 [
+ScrollView包含TableView解除联动 ](https://www.jianshu.com/p/420f9dc78c04) )
 
     
     

@@ -6,8 +6,8 @@ category: 技术笔记
 
   
 文／小白不是总（简书作者）  
-原文链接： [ http://www.jianshu.com/p/d006a34a343f
-](http://www.jianshu.com/p/d006a34a343f)  
+原文链接： [ https://www.jianshu.com/p/d006a34a343f
+](https://www.jianshu.com/p/d006a34a343f)  
 著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。
 
 我们经常性的需要使用局域网搭建 Web 服务器测试环境，如部署局域网无线安装企业应用等，Mac OS X 自带了 Apache 和 PHP
@@ -26,8 +26,8 @@ category: 技术笔记
 
 启动 Apache  
 在终端输入 sudo apachectl start 即可启动 Apache。  
-启动后，在浏览器中输入 [ http://127.0.0.1 ](http://127.0.0.1) 或 [ http://localhost
-](http://localhost) 如果看到 It Works! 页面
+启动后，在浏览器中输入 [ https://127.0.0.1 ](https://127.0.0.1) 或 [ https://localhost
+](https://localhost) 如果看到 It Works! 页面
 
 那么 Apache 就启动成功了，站点的根目录为系统级根目录 /Library/WebServer/Documents。
 
@@ -71,8 +71,8 @@ sudo touch username.conf，并修改文件权限 sudo chmod 644 username.conf。
 
 重启 Apache：sudo apachectl restart
 
-在浏览器中输入 [ http://127.0.0.1/~username ](http://127.0.0.1/~username) 或 [
-http://localhost/~username ](http://localhost/~username) ，即可测试用户目录是否工作。
+在浏览器中输入 [ https://127.0.0.1/~username ](https://127.0.0.1/~username) 或 [
+https://localhost/~username ](https://localhost/~username) ，即可测试用户目录是否工作。
 
 ** 2\. 启动 PHP **   
 Mac OS X 也默认集成了 PHP 环境，如果测试需要用到 PHP 环境，可以通过配置手动开启。

@@ -31,6 +31,6 @@ category: 技术笔记
         return response;
     }
 
-栈溢出上的讨论： [ StackOverFlow ](http://stackoverflow.com/questions/28976144/wait-
+栈溢出上的讨论： [ StackOverFlow ](https://stackoverflow.com/questions/28976144/wait-
 for-afnetworking-completion-block-before-continuing-i-e-synchronous)
 

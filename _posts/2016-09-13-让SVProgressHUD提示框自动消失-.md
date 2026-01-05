@@ -34,7 +34,7 @@ category: 技术笔记
     });
 
 在第二种方法中用到的 ` dispatch_after ` 是一种 ` GCD ` ，关于GCD，详见 [ 唐巧博客
-](http://blog.devtang.com/2012/02/22/use-gcd/) ：
+](https://blog.devtang.com/2012/02/22/use-gcd/) ：
 
     
     

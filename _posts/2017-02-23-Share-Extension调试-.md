@@ -6,7 +6,7 @@ category: 技术笔记
 
   
 最近添加原生扩展功能，如图：  
-![这里写图片描述](http://img.blog.csdn.net/20170223205310963?watermark/2/text/aHR0cDo
+![这里写图片描述](https://img.blog.csdn.net/20170223205310963?watermark/2/text/aHR0cDo
 vL2Jsb2cuY3Nkbi5uZXQvaWNoZW53aW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==
 /dissolve/70/gravity/SouthEast)
 
