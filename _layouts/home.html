@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% assign all_posts = site.posts %}
+
+{% if page.url contains '/en/' %}
+  {% assign posts = all_posts | where: "lang", "en" %}
+{% else %}
+  {% assign posts = all_posts | munge_filter_out_en %} 
+  {% assign posts = "" | split: "" %}
+  {% for post in all_posts %}
+    {% unless post.lang == "en" %}
+      {% assign posts = posts | push: post %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
+
+<div id="post-list" class="flex-grow-1 px-xl-1">
+  {% for post in posts %}
+    <article class="card-wrapper card">
+       </article>
+  {% endfor %}
+</div>

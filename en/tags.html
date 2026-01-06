@@ -1,0 +1,25 @@
+---
+layout: page
+title: Tags
+permalink: /en/tags/
+---
+
+{% assign en_posts = site.posts | where: "lang", "en" %}
+{% assign en_tags = "" | split: "" %}
+
+{% for post in en_posts %}
+  {% for tag in post.tags %}
+    {% unless en_tags contains tag %}
+      {% assign en_tags = en_tags | push: tag %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% assign en_tags = en_tags | sort %}
+
+<div id="tags" class="d-flex flex-wrap">
+  {% for tag in en_tags %}
+  <a href="/en/tags/{{ tag | slugify | url_encode }}/" class="btn btn-outline-secondary btn-sm m-1">
+    {{ tag }} <span class="badge text-muted">{{ en_posts | where: "tags", tag | size }}</span>
+  </a>
+  {% endfor %}
+</div>

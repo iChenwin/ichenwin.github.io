@@ -1,0 +1,29 @@
+---
+layout: page
+title: Categories
+permalink: /en/categories/
+---
+
+{% assign en_posts = site.posts | where: "lang", "en" %}
+{% assign en_categories = "" | split: "" %}
+
+{% for post in en_posts %}
+  {% for category in post.categories %}
+    {% unless en_categories contains category %}
+      {% assign en_categories = en_categories | push: category %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% assign en_categories = en_categories | sort %}
+
+<div id="categories" class="d-flex flex-wrap mx-n1">
+  {% for category in en_categories %}
+  {% capture category_slug %}{{ category | slugify | url_encode }}{% endcapture %}
+  <div class="mx-1 mb-2">
+    <a href="/en/categories/{{ category_slug }}/" class="btn btn-outline-secondary btn-sm">
+      {{ category }}
+      <span class="badge text-muted">{{ en_posts | where: "categories", category | size }}</span>
+    </a>
+  </div>
+  {% endfor %}
+</div>
