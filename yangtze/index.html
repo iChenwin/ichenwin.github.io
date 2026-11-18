@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#17494d" />
+    <meta
+      name="description"
+      content="在程序生成的长江里慢慢游：一指转向，穿行于五座沿江城市。"
+    />
+    <title>江流 · 长江漫游</title>
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css?v=2" />
+  </head>
+  <body>
+    <canvas
+      id="world"
+      aria-label="长江游泳游戏，拖动转向，上推加速，双击潜水"
+      tabindex="0"
+    ></canvas>
+    <div class="vignette"></div>
+    <header>
+      <a class="brand" href="#" aria-label="江流首页"
+        >江流<span>YANGTZE / FLOW</span></a
+      ><button
+        id="pause"
+        class="icon-button"
+        aria-label="打开菜单"
+        title="菜单"
+      >
+        ☰
+      </button>
+    </header>
+    <main id="intro">
+      <span class="eyebrow">一江山水，任你浮游</span>
+      <h1>慢一点，<br />游进<span>江流。</span></h1>
+      <p>
+        山城的晨雾，江豚的呼吸，入海的风。<br />用一场游泳，走过长江的五座城。
+      </p>
+      <button id="start" class="primary">入水漫游 <span>↗</span></button>
+      <div class="intro-note">自动前游 · 一指转向 · 横竖屏皆可</div>
+    </main>
+    <div id="hud" class="hidden">
+      <div class="place">
+        <span class="eyebrow" id="segment">01 / 山城江湾</span>
+        <h2 id="cityName">重庆</h2>
+        <p id="cityDesc">群山之间，万家灯火。</p>
+      </div>
+      <div class="trip">
+        <div class="trip-numbers">
+          <span><b id="distance">0</b><small> / 800 m</small></span
+          ><span id="encounters">生态发现 0 / 3</span>
+        </div>
+        <div class="progress"><i id="progress"></i></div>
+        <div class="trip-detail">
+          <span><span id="speed">0.0</span> m/s</span
+          ><span class="energy" aria-label="体力"><i id="energy"></i></span>
+        </div>
+      </div>
+    </div>
+    <div id="controls" class="hidden">
+      <button id="stroke" class="stroke-control" title="切换游姿 E">
+        <span id="strokeName">自由泳</span
+        ><span class="cycle-icon">↻</span></button
+      ><span id="gestureHint">左右拖动转向 · 上推加速 · 双击潜水</span
+      ><button
+        id="dive"
+        class="dive-control"
+        aria-label="潜入水下"
+        title="潜水 空格"
+      >
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path
+            d="M5 9c4-4 7 4 11 0s7 4 11 0M16 13v12m-5-5 5 5 5-5"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          /></svg
+        ><span id="diveLabel">潜水</span>
+      </button>
+    </div>
+    <div id="joystick" aria-hidden="true"><i></i></div>
+    <div id="toast" role="status"></div>
+    <footer id="introFooter">
+      <span>重庆 → 宜昌 → 武汉 → 南京 → 上海</span
+      ><button id="about">这条江如何生成 ↗</button>
+    </footer>
+    <dialog id="menu" aria-labelledby="menuTitle">
+      <div class="dialog-heading">
+        <span class="eyebrow">RIVER JOURNAL / 江上手记</span
+        ><button class="close" id="closeMenu" aria-label="关闭菜单">×</button>
+      </div>
+      <h2 id="menuTitle">停一停，听江流。</h2>
+      <button id="resume" class="primary">继续漫游 ↗</button>
+      <div class="menu-section">
+        <span class="section-label">下一站，去哪里</span>
+        <nav id="route" aria-label="选择沿江城市"></nav>
+      </div>
+      <div class="preferences">
+        <button id="sound">声音 关</button><button id="view">视角 · 跟随</button
+        ><button id="day">天色 · 日暮</button>
+      </div>
+      <div class="menu-section">
+        <span class="section-label">轻轻一推，就出发</span>
+        <p class="mobile-instructions">
+          自动前游。按住画面左右拖动转向，向上推加速；松手恢复体力。双击画面或点右下角潜水，左下角切换游姿。
+        </p>
+        <p class="desktop-instructions">
+          自动前游 · A / D 转向 · W 加速 · Shift 冲刺<br />空格 潜水 · E 游姿 ·
+          V 视角 · P / Esc 菜单
+        </p>
+      </div>
+      <details>
+        <summary>一片用代码生成的江景</summary>
+        <p>
+          水面由 GPU
+          计算波浪、法线与反光。山岸、楼宇、桥梁与生物都是程序化几何；游姿用分阶段轨迹和双骨骼逆向运动学生成，水声与音乐用
+          Web Audio 合成。无图片贴图、录音、外部模型或动作文件。
+        </p>
+        <p>
+          五座城市是艺术化意象，并非真实地图。每段 800
+          米，穿过光环发现生灵。松开加速会恢复体力。
+        </p>
+      </details>
+      <div class="menu-meta">
+        <span id="coordinate">29°33′ N / 106°35′ E</span
+        ><span id="weather">17:40 · 江上晴</span>
+      </div>
+      <span id="locationText" class="sr-only">重庆 · 山城江湾</span>
+    </dialog>
+    <div id="error" class="hidden" role="alert"></div>
+    <script type="module" src="game.js?v=2"></script>
+  </body>
+</html>
