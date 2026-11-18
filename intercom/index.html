@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#15251f">
+  <meta name="description" content="两台设备，一个频道。打开链接，按住说话的 WebRTC 对讲机。">
+  <meta name="referrer" content="no-referrer">
+  <title>随声 · 网页对讲机</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./vendor/peerjs.min.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <main>
+    <header><a class="brand" href="./"><span class="brand-mark">◖◖</span> 随声 <span class="brand-en">SUI SHENG</span></a><span class="tag">WEB WALKIE-TALKIE</span></header>
+    <section class="intro"><p class="eyebrow">把声音，带到另一端</p><h1>两个人。<br>同一个频道。</h1><p class="lede">无需安装。分享一个链接，<br class="mobile">就能听见彼此。</p></section>
+    <section class="radio" aria-label="对讲机">
+      <div class="radio-top"><span>SS—01 / DUPLEX OFF</span><span class="led" id="led"></span></div>
+      <div class="display" role="status" aria-live="polite">
+        <div class="display-head"><span id="mode">待机 STANDBY</span><span id="connection">○ 未连接</span></div>
+        <p id="status">先创建一个频道</p><p id="hint">邀请另一台设备，开启你们的对话。</p>
+        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div id="setup" class="setup"><button id="start" class="primary">创建频道 <span>↗</span></button><p id="setupNote">首次使用需要允许麦克风权限</p></div>
+      <div id="session" hidden>
+        <div id="inviteBox" class="invite-box"><label for="invite">邀请链接 <span>仅限两人 · 持链接可加入</span></label><div class="invite-row"><input id="invite" readonly aria-label="邀请链接"><button id="copy">复制链接</button></div></div>
+        <button id="ptt" class="ptt" disabled aria-label="按住说话" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><strong id="pttLabel">等待对方加入</strong><span>HOLD TO TALK</span></button>
+        <p class="keyboard">按住按钮说话，松开收听 <span>桌面端可按住 <kbd>空格</kbd></span></p>
+        <div class="session-actions"><button id="speaker" hidden>点击开启声音</button><button id="leave" class="text-button">结束频道 ↗</button></div>
+      </div>
+      <div class="speaker-grille" aria-hidden="true"></div>
+    </section>
+    <section class="how"><div><span>01</span><p>创建频道<small>允许使用麦克风</small></p></div><div><span>02</span><p>分享链接<small>用另一台设备打开</small></p></div><div><span>03</span><p>按住说话<small>松开，听对方回应</small></p></div></section>
+    <details id="advanced"><summary>连接设置与使用说明 <span>＋</span></summary><div class="details-body"><p>音频使用 WebRTC 加密传输，本站不录音。连接协商依赖 PeerJS 公共服务；不要公开分享邀请链接。切到后台、锁屏或浏览器休眠可能中断通话，请保持页面在前台。</p><p>如果跨网络一直无法接通，可在两台设备上配置你的 TURN 中继。默认仅使用 STUN，无法保证穿透所有移动网络或企业网络。</p><form id="settings"><label for="turnUrl">TURN 地址</label><input id="turnUrl" placeholder="turn:your-server.com:3478" autocomplete="off"><label for="turnUser">用户名</label><input id="turnUser" autocomplete="off"><label for="turnPassword">密码</label><input id="turnPassword" type="password" autocomplete="off"><button type="submit">应用到下次连接</button><p id="settingsNote">凭据仅在当前页面内存中保存，刷新后清除。</p></form><p>建议戴耳机使用，避免近距离两台设备产生回声。每次连续发言最长 45 秒。支持现代 Chrome、Edge、Firefox 和 Safari；需要 HTTPS 与麦克风权限。</p></div></details>
+    <footer><span>随声 · 声音在，距离不在。</span><a href="https://ichenwin.github.io/">iChenwin ↗</a></footer>
+  </main>
+  <audio id="remoteAudio" autoplay playsinline></audio>
+</body>
+</html>
